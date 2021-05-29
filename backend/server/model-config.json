@@ -1,0 +1,33 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins",
+      "../node_modules/loopback-ds-computed-mixin/lib"
+    ]
+  },
+  "face": {
+    "dataSource": "db",
+    "public": true
+  },
+  "person": {
+    "dataSource": "db",
+    "public": true
+  },
+  "social_network": {
+    "dataSource": "db",
+    "public": true
+  },
+  "history": {
+    "dataSource": "db",
+    "public": true
+  }
+}

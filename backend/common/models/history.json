@@ -1,0 +1,30 @@
+{
+  "name": "history",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "search_photo": {
+      "type": "string"
+    },
+    "filter": {
+      "type": "object"
+    },
+    "date": {
+      "type": "date",
+      "default": "$now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "faces": {
+      "type": "referencesMany",
+      "model": "face",
+      "foreignKey": "ids_faces"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

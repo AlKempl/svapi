@@ -1,0 +1,29 @@
+{
+  "name": "face",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "url_photo": {
+      "type": "string"
+    },
+    "vector_dots_face": {
+      "type": [
+        "number"
+      ],
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "person": {
+      "type": "belongsTo",
+      "model": "person",
+      "foreignKey": "id_person"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

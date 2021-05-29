@@ -1,0 +1,21 @@
+{
+  "name": "social_network",
+  "base": "PersistedModel",
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "social_network": {
+      "type": "string",
+      "required": true,
+      "length": 100
+    },
+    "id_social_network": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

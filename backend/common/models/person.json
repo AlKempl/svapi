@@ -1,0 +1,60 @@
+{
+  "name": "person",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "first_name": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string",
+      "required": true
+    },
+    "id_person": {
+      "type": "number",
+      "required": true,
+      "index": true
+    },
+    "id_domain": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "bdate": {
+      "type": "date"
+    },
+    "sex": {
+      "type": "string"
+    },
+    "is_closed": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "socialNetwork": {
+      "type": "belongsTo",
+      "model": "social_network",
+      "foreignKey": "id_social_network"
+    },
+    "faces": {
+      "type": "hasMany",
+      "model": "face",
+      "foreignKey": "id_person"
+    }
+  },
+  "acls": [],
+  "methods": {},
+  "mixins": {
+    "Computed": {
+      "properties": {
+        "age": "calculateAge"
+      }
+    }
+  }
+}
