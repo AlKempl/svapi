@@ -1,0 +1,24 @@
+.search-result {
+  display: flex;
+
+  .search-result-person {
+    max-width: 250px;
+    flex: 1;
+    margin-right: 15px;
+
+    .search-result-icon {
+      margin-right: 5px;
+
+      img { width: 24px; }
+    }
+
+    .search-result-name, .search-result-profile, .search-result-confidence {
+      display: flex;
+      align-content: center;
+    }
+
+    .search-result-photo {
+      img { width: 100%; }
+    }
+  }
+}

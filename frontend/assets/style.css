@@ -1,0 +1,83 @@
+body {
+  width: 60%;
+  margin: auto; }
+
+#serviceTitle {
+  margin-bottom: 5px; }
+
+.drop-area {
+  display: flex; }
+  .drop-area #search-button button {
+    width: 88px;
+    height: 88px;
+    margin-left: 10px; }
+    .drop-area #search-button button svg {
+      width: 45px;
+      height: 45px; }
+  .drop-area .dropzone {
+    border: 1px dashed;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    flex: 1; }
+    .drop-area .dropzone.drag-active {
+      border-color: #3f51b5;
+      color: #3f51b5; }
+
+.error-area {
+  margin-top: 10px; }
+  .error-area .MuiAlert-message {
+    font-size: 14pt; }
+  .error-area .MuiAlert-icon {
+    font-size: 28px; }
+
+.filter-area {
+  margin-bottom: 10px; }
+  .filter-area .MuiExpansionPanel-root {
+    box-shadow: 0 2px 1px -1px #3f51b5, 0 1px 1px 0 rgba(63, 81, 181, 0.7), 0 1px 3px 0 rgba(63, 81, 181, 0.8); }
+  .filter-area form {
+    width: 100%; }
+    .filter-area form .filter-form {
+      display: flex; }
+      .filter-area form .filter-form > div {
+        flex: 1;
+        text-align: center; }
+      .filter-area form .filter-form .MuiTextField-root {
+        width: 80%; }
+      .filter-area form .filter-form .age-filter {
+        display: inline-flex;
+        width: 80%;
+        align-items: center;
+        margin-top: 15px; }
+        .filter-area form .filter-form .age-filter .age-slider {
+          flex: 1; }
+          .filter-area form .filter-form .age-filter .age-slider .MuiSlider-root {
+            width: 80%;
+            margin-top: 25px; }
+
+.loading-area {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #3f51b5;
+  font-size: 18pt; }
+  .loading-area .loading-text {
+    margin-left: 10px; }
+
+.search-result {
+  display: flex; }
+  .search-result .search-result-person {
+    max-width: 250px;
+    flex: 1;
+    margin-right: 15px; }
+    .search-result .search-result-person .search-result-icon {
+      margin-right: 5px; }
+      .search-result .search-result-person .search-result-icon img {
+        width: 24px; }
+    .search-result .search-result-person .search-result-name, .search-result .search-result-person .search-result-profile, .search-result .search-result-person .search-result-confidence {
+      display: flex;
+      align-content: center; }
+    .search-result .search-result-person .search-result-photo img {
+      width: 100%; }
+
